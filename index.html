@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="fragment" content="!"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hi</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="vendor/angular/angular-csp.css">
+</head>
+<body>
+
+<!--[if lte IE 9]>
+<p class="browsehappy">
+    Похоже, вы используете <strong>устаревшую версию</strong> Internet Explorer. <a href="http://browsehappy.com/">Обновите
+    свой браузер</a>.
+</p>
+<![endif]-->
+
+<div class="block-container">
+    <div ng-include src="'modules/site/header.html'"></div>
+
+    <change-url></change-url>
+    <div ui-view>
+    </div>
+</div>
+
+<div ng-include src="'modules/site/footer.html'"></div>
+
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/angular/angular.js"></script>
+<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="vendor/angular-i18n/angular-locale_ru.js"></script>
+<script src="vendor/angular-sanitize/angular-sanitize.js"></script>
+<script src="vendor/angular-animate/angular-animate.min.js"></script>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script src="services.js"></script>
+<script src="directives.js"></script>
+
+<script src="modules/site/controllers/HeaderCtrl.js"></script>
+
+</body>
+</html>
