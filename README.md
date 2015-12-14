@@ -10,3 +10,5 @@ npm install -g bower
 ```
 bower update
 ```
+
+Указать в serviceBase переменной в web-client\app.js URL вес-сервиса.
